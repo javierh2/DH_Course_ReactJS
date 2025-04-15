@@ -4,3 +4,7 @@ uso de VITE
 uso de nodeJS e importar VITE  poner los npm
 
 npm create vite@latest
+
+  cd first-project-react
+  npm install
+  npm run dev
