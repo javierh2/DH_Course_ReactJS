@@ -1,11 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import  PorfolioApp  from './PorfolioApp'
-// import './index.css'
-// import App from './App.jsx'
+import { VariablesApp } from './VariablesApp'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PorfolioApp/>
+    <VariablesApp/>
   </StrictMode>,
 )
