@@ -6,6 +6,6 @@ import './style.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <VariablesApp/>
+    <VariablesApp objeto={{nombre:'jav', apellido:'mb'}}/>
   </StrictMode>,
 )
