@@ -4,8 +4,8 @@ import { VariablesApp } from './VariablesApp'
 import './style.css'
 
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render( // se conecta con la app y el componente  si no está la aclaración se usarán las DEFAULT
   <StrictMode>
-    <VariablesApp objeto={{nombre:'jav', apellido:'mb'}}/>
+    <VariablesApp titulo='este es un titulo' subtitulo='este es un subtitulo' num={999}/>
   </StrictMode>,
 )
