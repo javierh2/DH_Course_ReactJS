@@ -1,17 +1,31 @@
 import React from 'react'
 import './VariableApp.css'
 
-// uso de un funcional component dentro de otro
-// aunque se encapsula dentro del export para ser enviado
-// se puede consumir solo desde adentro
-const Button = ({title}) =>{
-  return <button>{title}</button>
-}
 
+// forma de manejar eventos MÁS comun y en caso de agregar otro parametro
+// export const VariablesApp = () => {
+//   const handleClick = (event, param2) =>{
+//     console.log(event, param2)
+//   }
+//   return (
+//     <>
+//         <button onClick={(event) => handleClick(event, 'soy otro manejo de parámetro')}>
+//           soy un boton
+//         </button>
+//     </>
+//   )
+// }
+
+// FORMA DE MANEJAR UN EVENTO
 export const VariablesApp = () => {
+  const handleClick = (event) =>{
+    console.log(event)
+  }
   return (
     <>
-      <Button title='Soy un functionarrow button'/>
+        <button onClick={handleClick}>
+          soy un boton
+        </button>
     </>
   )
 }
