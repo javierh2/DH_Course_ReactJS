@@ -1,31 +1,20 @@
 import React from 'react'
-import './VariableApp.css'
 
-
-// forma de manejar eventos MÁS comun y en caso de agregar otro parametro
-// export const VariablesApp = () => {
-//   const handleClick = (event, param2) =>{
-//     console.log(event, param2)
-//   }
-//   return (
-//     <>
-//         <button onClick={(event) => handleClick(event, 'soy otro manejo de parámetro')}>
-//           soy un boton
-//         </button>
-//     </>
-//   )
-// }
-
-// FORMA DE MANEJAR UN EVENTO
 export const VariablesApp = () => {
-  const handleClick = (event) =>{
-    console.log(event)
+  const handleKeyUp = (event) =>{
+    // console.log(event)
+    // console.log(event.key)
+    if (event.shiftKey){
+      console.log(event.key)
+      console.log('la tecla shift está presionada en', {event})
+    }else{
+      console.log('no estás presionando shift')
+    }
   }
   return (
     <>
-        <button onClick={handleClick}>
-          soy un boton
-        </button>
+        <input type="text" onKeyUp={handleKeyUp} placeholder='presiona una tecla' />
     </>
   )
 }
+
