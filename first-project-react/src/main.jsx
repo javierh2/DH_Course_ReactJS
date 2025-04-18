@@ -6,6 +6,6 @@ import { DashboardApp } from './DashboardApp'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <DashboardApp/>
+    <DashboardApp tipoUsuario='sapo pepe'/>
   </StrictMode>,
 )
