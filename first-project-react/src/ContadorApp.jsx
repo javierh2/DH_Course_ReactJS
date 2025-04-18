@@ -1,10 +1,16 @@
-import React from 'react'
+import { useState } from 'react'
 
-export const ContadorApp = ({counter}) => {
-    console.log(counter)
+export const ContadorApp = ({init}) => {
+    const [counter, setCounter] = useState(init)
+
+    // const handleClick = () =>{
+    //     const num = counter + 1
+    //     setCounter(num)
+    // }
   return (
     <>
-        <button onClick={() => counter + 1}>Agregar uno</button>
+        <p>el contador es : {counter}</p>
+        <button onClick={() => setCounter(counter + 1)}>Agregar uno</button>
     </>
   )
 }
