@@ -3,12 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { ListApp } from './ListApp'
 
 
-
-
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ListApp/>
+    <ListApp cantidad={5}/>
   </StrictMode>,
 )
