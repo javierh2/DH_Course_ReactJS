@@ -19,8 +19,5 @@ const UsuarioNoLogeado = () =>{
 }
 
 export const DashboardApp = ({isLogged}) => {
-
-    if (isLogged) return <UsuarioLogeado/>
-    else return <UsuarioNoLogeado/>
-
+    return isLogged ? <UsuarioLogeado/> : <UsuarioNoLogeado/>
 }
