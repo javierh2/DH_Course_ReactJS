@@ -13,7 +13,7 @@ const UsuarioNoLogeado = () =>{
     return(
         <div>
             <h1>ADIOS</h1>
-            <p>para ingresar porfavor logearse </p>
+            <p>para ingresar porfavor logearse</p>
         </div>
     )
 }
