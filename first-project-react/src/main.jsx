@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { VariablesApp } from './VariablesApp'
+import { ContadorApp } from './ContadorApp'
+
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <VariablesApp />
+    <ContadorApp counter={0}/>
   </StrictMode>,
 )
