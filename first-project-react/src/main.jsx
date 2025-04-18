@@ -1,12 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ContadorApp } from './ContadorApp'
+import { DashboardApp } from './DashboardApp'
+
 
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContadorApp init={0}/>
+    <DashboardApp isLogged={true}/>
   </StrictMode>,
 )
