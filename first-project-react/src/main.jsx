@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ListApp } from './ListApp'
+import { DashboardApp } from './DashboardApp'
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ListApp cantidad={5}/>
+    <DashboardApp/>
   </StrictMode>,
 )
