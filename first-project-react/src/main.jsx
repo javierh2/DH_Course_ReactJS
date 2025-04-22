@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { DashboardApp } from './DashboardApp'
+import { UserApp } from './pages/users/UserApp'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <DashboardApp tipoUsuario='sapo pepe'/>
+    <UserApp/>
   </StrictMode>,
 )
