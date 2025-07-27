@@ -8,11 +8,11 @@ export const FetchList = ({endpoint}) => {
 
     return (
         <>
-            { isLoading
+            {isLoading
             ? <p>Cargando...</p>
-                :endpoint == 'users'
-                    ? data.map(item => <p key={item.id}>{item.name}</p>)
-                    : data.map(item => <p key={item.id}>{item.body}</p>)
+            : endpoint == 'users'
+                ? data.map(item => <p key={item.id}>{item.name}</p>)
+                : data.map(item => <p key={item.id}>{item.body}</p>)
             }
         </>
     )
