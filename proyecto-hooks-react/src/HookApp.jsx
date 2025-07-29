@@ -1,6 +1,7 @@
 import React from 'react'
 import { CounterApp } from './components/CounterApp'
 import { FormsApp } from './components/FormsApp'
+import { FetchApp } from './components/FetchApp'
 
 export const HookApp = () => {
   return (
@@ -8,7 +9,8 @@ export const HookApp = () => {
       <h1>APLICACION DE HOOKS</h1>
       <hr />
       {/* <CounterApp/> */}
-      <FormsApp/>
+      {/* <FormsApp/> */}
+      <FetchApp/>
     </>
   )
 }
