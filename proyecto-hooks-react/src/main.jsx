@@ -7,6 +7,6 @@ import { HookApp } from './HookApp'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <HookApp/>
+    <HookApp/>
   </StrictMode>,
 )

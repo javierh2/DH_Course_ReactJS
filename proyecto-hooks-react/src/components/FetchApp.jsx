@@ -1,9 +1,14 @@
 import React from 'react'
 import { useFetch } from '../hooks/useFetch';
+import { useEffect } from 'react';
 
 export const FetchApp = () => {
     const url='https://jsonplaceholder.typicode.com/users'
-    const { data, isLoading, error } = useFetch(url);
+    const { data, isLoading, error, fetchData } = useFetch();
+
+    useEffect(() => {
+        fetchData(url, 'GET');
+    }, []);
 
     return (
         <>

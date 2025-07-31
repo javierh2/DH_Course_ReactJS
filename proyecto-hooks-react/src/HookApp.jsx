@@ -8,8 +8,10 @@ export const HookApp = () => {
     <>
       <h1>APLICACION DE HOOKS</h1>
       <hr />
-      {/* <CounterApp/> */}
-      {/* <FormsApp/> */}
+      <CounterApp/>
+      <hr />
+      <FormsApp/>
+      <hr />
       <FetchApp/>
     </>
   )
