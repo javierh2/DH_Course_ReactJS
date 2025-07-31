@@ -2,7 +2,7 @@ import React, { use } from 'react'
 import { useForm } from '../hooks/useForm';
 import { useEffect, useRef } from 'react';
 
-export const FormsApp = () => {
+export const FormsComponent = () => {
 
     const initialForm = {
         username: '',

@@ -1,21 +1,22 @@
 import React from 'react'
-import { CounterApp } from './components/CounterApp'
-import { FormsApp } from './components/FormsApp'
-import { FetchApp } from './components/FetchApp'
-import { CalculoApp } from './components/CalculoApp'
+import { CounterComponent } from './components/CounterComponent'
+import { FormsComponent } from './components/FormsComponent'
+import { FetchComponent } from './components/FetchComponent'
+import { CalculoComponent } from './components/CalculoComponent'
+
 
 export const HookApp = () => {
   return (
     <>
       <h1>APLICACION DE HOOKS</h1>
       <hr />
-      {/* <CounterApp/> */}
+      <CounterComponent/>
       <hr />
-      {/* <FormsApp/> */}
+      <FormsComponent/>
       <hr />
-      {/* <FetchApp/> */}
+      <FetchComponent/>
       <hr />
-      <CalculoApp/>
+      <CalculoComponent/>
     </>
   )
 }

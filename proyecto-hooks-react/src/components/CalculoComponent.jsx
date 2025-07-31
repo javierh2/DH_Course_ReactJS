@@ -2,7 +2,7 @@ import React, { use } from 'react'
 import { useState } from 'react';
 import { useMemo } from 'react';
 
-export const CalculoApp = () => {
+export const CalculoComponent = () => {
 
     const [show, setShow] = useState(true);
 
