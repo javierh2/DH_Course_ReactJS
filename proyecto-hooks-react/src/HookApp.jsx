@@ -2,6 +2,7 @@ import React from 'react'
 import { CounterApp } from './components/CounterApp'
 import { FormsApp } from './components/FormsApp'
 import { FetchApp } from './components/FetchApp'
+import { CalculoApp } from './components/CalculoApp'
 
 export const HookApp = () => {
   return (
@@ -10,9 +11,11 @@ export const HookApp = () => {
       <hr />
       {/* <CounterApp/> */}
       <hr />
-      <FormsApp/>
+      {/* <FormsApp/> */}
       <hr />
       {/* <FetchApp/> */}
+      <hr />
+      <CalculoApp/>
     </>
   )
 }
