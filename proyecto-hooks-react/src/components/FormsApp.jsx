@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { use } from 'react'
 import { useForm } from '../hooks/useForm';
+import { useEffect, useRef } from 'react';
 
 export const FormsApp = () => {
 
@@ -18,6 +19,11 @@ export const FormsApp = () => {
         console.log(formState);
     };
 
+    const focusRef = useRef()
+    useEffect(() => {
+        focusRef.current.focus();
+    }, []);
+
     return (
         <>
             <h4>Formulario Test</h4>
@@ -32,7 +38,7 @@ export const FormsApp = () => {
                     <input type="text" className="form-control" id="nickname" name="nickname" value={nickname} onChange={onInputChange}/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email</label>
+                    <label ref={focusRef} htmlFor="email" className="form-label">Email</label>
                     <input type="email" className="form-control" id="email" name="email" value={email} onChange={onInputChange}/>
                 </div>
                 <div className="mb-3">
