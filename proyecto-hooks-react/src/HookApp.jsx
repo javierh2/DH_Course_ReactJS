@@ -2,9 +2,9 @@ import React from 'react'
 import { CounterComponent } from './components/CounterComponent'
 import { FormsComponent } from './components/FormsComponent'
 import { FetchComponent } from './components/FetchComponent'
-import { CalculoComponent } from './components/ComputeComponent'
+import { ComputeComponent } from './components/ComputeComponent'
 import { CallbackComponent } from './components/CallbackComponent'
-import { TareasComponent } from './components/TaskComponent'
+import { TaskComponent } from './components/TaskComponent'
 
 
 export const HookApp = () => {
@@ -18,10 +18,10 @@ export const HookApp = () => {
       <hr />
       <FetchComponent/>
       <hr />
-      <CalculoComponent/>
+      <ComputeComponent/>
       <hr /> */}
       {/* <CallbackComponent/> */}
-      <TareasComponent  />
+      <TaskComponent  />
     </>
   )
 }

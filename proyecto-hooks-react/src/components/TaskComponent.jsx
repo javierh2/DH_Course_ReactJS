@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TareasComponent = () => {
+export const TaskComponent = () => {
 
     const taskReducer
 
