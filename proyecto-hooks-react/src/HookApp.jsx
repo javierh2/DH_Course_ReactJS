@@ -3,13 +3,14 @@ import { CounterComponent } from './components/CounterComponent'
 import { FormsComponent } from './components/FormsComponent'
 import { FetchComponent } from './components/FetchComponent'
 import { CalculoComponent } from './components/CalculoComponent'
+import { CallbackComponent } from './components/CallbackComponent'
 
 
 export const HookApp = () => {
   return (
     <>
       <h1>APLICACION DE HOOKS</h1>
-      <hr />
+      {/* <hr />
       <CounterComponent/>
       <hr />
       <FormsComponent/>
@@ -17,6 +18,8 @@ export const HookApp = () => {
       <FetchComponent/>
       <hr />
       <CalculoComponent/>
+      <hr /> */}
+      <CallbackComponent/>
     </>
   )
 }
