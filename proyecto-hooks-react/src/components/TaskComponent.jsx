@@ -88,7 +88,7 @@ export const TaskComponent = () => {
                     <input type="text" className="form-control" id="task" name='task' onChange={onInputChange} />
                 </div>
                 <button type="submit" className="btn btn-primary">Enviar Tarea</button>
-                <button type='button' className="btn btn-warning m-2" onClick={deleteAll}>Limpiar Tareas y voy a mirar esto</button>
+                <button type='button' className="btn btn-warning m-2" onClick={deleteAll}>Limpiar Tareas</button>
             </form>
             <hr />
 
