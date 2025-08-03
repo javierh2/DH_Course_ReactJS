@@ -82,7 +82,6 @@ export const TaskComponent = () => {
 
     return (
         <>
-            {/* {JSON.stringify(taskReducer(inicialState, createTask))} */}
             <form onSubmit={addTask}>
                 <div className="mb-3">
                     <label htmlFor="task" className="form-label">Agregar nueva tarea</label>
